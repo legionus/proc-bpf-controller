@@ -138,7 +138,7 @@ int BPF_PROG(proc_access_restrict, struct file *file, int ret)
 	data.root = sb_root;
 	data.dentry = dentry;
 
-	bpf_loop(3, callback, &data, 0);
+	bpf_loop(32, callback, &data, 0);
 
 	subdir = data.dentry;
 	name = BPF_CORE_READ(subdir, d_name.name);
