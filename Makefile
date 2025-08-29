@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: GPL-2.0-only
 
-CLANG = clang-15
+CLANG = clang
 TARGETS = proc-controller proc-controller.bpf.o
 
 all: $(TARGETS)
